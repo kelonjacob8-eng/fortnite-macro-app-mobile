@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- outer ripple ring -->
+    <path
+        android:pathData="M28,54a26,26 0,1 0,52 0a26,26 0,1 0,-52 0"
+        android:strokeWidth="3.5"
+        android:strokeColor="#664FC3F7"
+        android:fillColor="#00000000" />
+    <!-- inner ripple ring -->
+    <path
+        android:pathData="M38,54a16,16 0,1 0,32 0a16,16 0,1 0,-32 0"
+        android:strokeWidth="3.5"
+        android:strokeColor="#CC4FC3F7"
+        android:fillColor="#00000000" />
+    <!-- tap point -->
+    <path
+        android:pathData="M46,54a8,8 0,1 0,16 0a8,8 0,1 0,-16 0"
+        android:fillColor="#FFFF5252" />
+</vector>

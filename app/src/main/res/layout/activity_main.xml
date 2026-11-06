@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/Body"
+            android:text="@string/tagline" />
+
+        <!-- Step 1: accessibility -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/CardTitle"
+                android:text="@string/step1_title" />
+
+            <TextView
+                android:id="@+id/serviceStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/step1Body"
+                style="@style/Body"
+                android:text="@string/step1_body" />
+
+            <Button
+                android:id="@+id/btnAccessibility"
+                style="@style/PrimaryButton"
+                android:text="@string/open_accessibility" />
+
+            <TextView
+                android:id="@+id/restrictedHint"
+                style="@style/Body"
+                android:layout_marginTop="12dp"
+                android:text="@string/restricted_hint" />
+
+            <Button
+                android:id="@+id/btnAppInfo"
+                style="@style/SecondaryButton"
+                android:text="@string/open_app_info" />
+        </LinearLayout>
+
+        <!-- Step 2: floating controls -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/CardTitle"
+                android:text="@string/step2_title" />
+
+            <TextView
+                style="@style/Body"
+                android:text="@string/step2_body" />
+
+            <Button
+                android:id="@+id/btnShowControls"
+                style="@style/PrimaryButton"
+                android:text="@string/show_controls" />
+        </LinearLayout>
+
+        <!-- Playback settings -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/CardTitle"
+                android:text="@string/settings_title" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:labelFor="@id/inputRepeat"
+                    android:text="@string/repeat_label" />
+
+                <EditText
+                    android:id="@+id/inputRepeat"
+                    style="@style/FieldInput"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:labelFor="@id/inputDelay"
+                    android:text="@string/delay_label" />
+
+                <EditText
+                    android:id="@+id/inputDelay"
+                    style="@style/FieldInput"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:labelFor="@id/inputSpeed"
+                    android:text="@string/speed_label" />
+
+                <EditText
+                    android:id="@+id/inputSpeed"
+                    style="@style/FieldInput"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:maxLength="4" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switchPassThrough"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/passthrough_label"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/Body"
+                android:layout_marginTop="2dp"
+                android:text="@string/passthrough_hint"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <!-- Saved macros -->
+        <LinearLayout style="@style/Card">
+
+            <TextView
+                style="@style/CardTitle"
+                android:text="@string/macros_title" />
+
+            <TextView
+                android:id="@+id/macrosEmpty"
+                style="@style/Body"
+                android:text="@string/macros_empty" />
+
+            <LinearLayout
+                android:id="@+id/macroList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Body"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tips"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

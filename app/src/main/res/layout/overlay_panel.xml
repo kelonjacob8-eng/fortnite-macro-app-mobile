@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/panel_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingStart="4dp"
+    android:paddingTop="2dp"
+    android:paddingEnd="4dp"
+    android:paddingBottom="6dp">
+
+    <ImageView
+        android:id="@+id/handle"
+        android:layout_width="48dp"
+        android:layout_height="28dp"
+        android:alpha="0.55"
+        android:contentDescription="@string/cd_drag"
+        android:rotation="90"
+        android:scaleType="center"
+        android:src="@drawable/ic_drag" />
+
+    <ImageButton
+        android:id="@+id/btnRecord"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_ripple"
+        android:contentDescription="@string/cd_record"
+        android:scaleType="center"
+        android:src="@drawable/ic_record" />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_ripple"
+        android:contentDescription="@string/cd_play"
+        android:scaleType="center"
+        android:src="@drawable/ic_play" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:maxWidth="56dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        android:layout_width="40dp"
+        android:layout_height="36dp"
+        android:alpha="0.6"
+        android:background="@drawable/round_ripple"
+        android:contentDescription="@string/cd_close"
+        android:scaleType="center"
+        android:src="@drawable/ic_close" />
+</LinearLayout>

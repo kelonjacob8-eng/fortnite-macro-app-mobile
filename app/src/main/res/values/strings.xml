@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tap Macro</string>
+    <string name="service_label">Tap Macro</string>
+    <string name="service_description">Lets Tap Macro show its floating record/play buttons over other apps and replay the taps you record. It cannot read what is on your screen and does not collect or send any data.</string>
+
+    <string name="tagline">Record your taps once, then let your phone replay them on a loop.</string>
+
+    <string name="step1_title">1. Turn on Tap Macro</string>
+    <string name="step1_body">Android only lets apps tap the screen for you through Accessibility. Open the settings, tap \"Tap Macro\" (it may be under \"Downloaded apps\" or \"Installed apps\") and switch it on.</string>
+    <string name="status_on">● Turned on</string>
+    <string name="status_off">○ Turned off</string>
+    <string name="open_accessibility">Open accessibility settings</string>
+    <string name="restricted_hint">Switch greyed out or it says \"Restricted setting\"? Open App info, tap ⋮ in the top corner, choose \"Allow restricted settings\", then try again.</string>
+    <string name="open_app_info">Open App info</string>
+
+    <string name="step2_title">2. Record and play</string>
+    <string name="step2_body">Tap the button below, then open your game. A small floating bar appears:\n\n●  Record: play normally, your taps and swipes are recorded (and still go through to the game). Tap ■ to stop and save.\n▶  Play: replays the selected macro until you tap ■.\n✕  Hides the bar. Drag the dots at the top to move it out of the way.</string>
+    <string name="show_controls">Show floating controls</string>
+    <string name="controls_shown">Floating controls are on screen. Now open your game.</string>
+    <string name="enable_first">Turn on Tap Macro in Accessibility settings first.</string>
+
+    <string name="settings_title">Playback settings</string>
+    <string name="repeat_label">Repeat count (0 = forever)</string>
+    <string name="delay_label">Pause between repeats (seconds)</string>
+    <string name="speed_label">Speed (1 = normal, 2 = twice as fast)</string>
+    <string name="passthrough_label">Send taps to the game while recording</string>
+    <string name="passthrough_hint">Turn this off if you only want to mark where to tap without the game reacting yet.</string>
+
+    <string name="macros_title">Your macros</string>
+    <string name="macros_empty">Nothing recorded yet. Show the floating controls and tap ● to record your first macro.</string>
+    <plurals name="macro_details">
+        <item quantity="one">%1$d tap · %2$s · %3$s</item>
+        <item quantity="other">%1$d taps · %2$s · %3$s</item>
+    </plurals>
+    <string name="portrait">portrait</string>
+    <string name="landscape">landscape</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="delete_confirm">Delete \"%1$s\"?</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string name="tips">Tips: keep the floating bar away from spots you tap, because a tap that lands on the bar will not reach the game. Record and play with your phone held the same way (portrait or landscape). If playback stops after a while, turn off battery optimisation for Tap Macro.</string>
+
+    <!-- Floating panel -->
+    <string name="cd_drag">Drag to move</string>
+    <string name="cd_record">Record</string>
+    <string name="cd_stop_record">Stop recording</string>
+    <string name="cd_play">Play</string>
+    <string name="cd_stop_play">Stop playing</string>
+    <string name="cd_close">Hide controls</string>
+    <string name="recording_banner">● REC: tap ■ on the bar to stop</string>
+    <plurals name="saved_macro">
+        <item quantity="one">Saved \"%1$s\" (%2$d tap)</item>
+        <item quantity="other">Saved \"%1$s\" (%2$d taps)</item>
+    </plurals>
+    <string name="nothing_recorded">Nothing recorded, no taps were made.</string>
+    <string name="no_macro">No macro yet. Tap ● to record one first.</string>
+    <string name="orientation_warning">This macro was recorded in %1$s. Turn your phone the same way or the taps will land in the wrong spots.</string>
+    <string name="playback_done">Macro finished.</string>
+</resources>
