@@ -52,6 +52,16 @@ Many online games don't allow automated input or AFK farming, and some ban accou
 
 Apple doesn't let apps tap the screen for you, so this app can't exist on iOS. The closest built-in option is **Settings → Accessibility → Switch Control → Recipes → Create New Recipe → Custom Gesture**. A recipe can replay one recorded gesture each time you trigger it, but it won't loop on its own.
 
+## PC: P + Space key macro
+
+`pc/p-space-macro.ahk` is a small Windows macro that presses **P**, then **Space**, over and over.
+
+1. Install **AutoHotkey v2** (free) from autohotkey.com.
+2. Download `pc/p-space-macro.ahk` and double-click it. A green **H** icon appears near the clock.
+3. Open your game and press **F8** to start. You'll hear a beep. Press **F8** again to stop, or **F10** to quit.
+
+It only presses keys while the window you started it in is in front, so alt-tabbing pauses it. To change the timing, right-click the file, choose **Edit**, and change the numbers at the top. If the game ignores the keys, right-click the file and choose **Run as administrator**.
+
 ## Build it yourself
 
 You need JDK 17+ and the Android SDK (or Android Studio).
